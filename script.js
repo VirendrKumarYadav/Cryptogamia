@@ -30,7 +30,7 @@ async function fetchCoinsSliderData(data, coin_id) {
 `
 
     flex_side.addEventListener('click', () => {
-        const url = "./more_data.html?id=" + data.item.id;
+        const url = "./nav/more.html?id=" + data.item.id;
         window.open(url, '_blank')
     })
     slide_cont.appendChild(flex_side);

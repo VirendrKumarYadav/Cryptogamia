@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3J5cHRvY3VycmVuY3l8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: wheat;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 15px;
+    background-color: rgba(137, 162, 162, 0.521);
+    /* width: 100%; */
+}
+
+nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+nav .container .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo,
+.foot_logo {
+    height: 50px;
+}
+
+.foot_logo {
+    height: 30px;
+}
+
+.container input,
+button {
+    padding: 12px 15px 12px 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+
+}
+
+.container input {
+    background-color: rgba(31, 72, 63, 0.678);
+    color: rgb(24, 19, 10);
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+.container button {
+    background-color: wheat;
+}
+
+footer {
+    font-family: 'Noto Serif', serif;
+    padding: 15px;
+    background-color: rgba(137, 162, 162, 0.521);
+}
+
+.foot_container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.foot_container>p {
+    padding: 10px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    text-align: center;
+    /* height: 10px; */
+    font-size: larger;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_container>.left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Noto Serif', serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main_container video {
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.slides_container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    /* overflow: hidden; */
+    animation: slide 20s linear infinite alternate;
+    position: relative;
+
+}
+
+.slide {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 30rem;
+    height: 75px;
+    border: 2px solid rgb(173, 164, 164);
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    background-color: rgba(176, 172, 166, 0.492);
+    color: black;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {
+        right: 0px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+
+.btn-41 {
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    box-shadow: 3px 3px 3px 3px rgba(28, 27, 26, 0.765);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 1s ease;
+    position: relative;
+    display: inline-block;
+    color: coral;
+}
+
+
+/* search button  */
+
+
+.btn-41 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: black;
+}
+
+.btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: ltl;
+    z-index: -1;
+    background: rgba(123, 110, 110, 0.649);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn-41:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(186, 128, 11);
+}
+
+.btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-41:active {
+    top: 2px;
+}

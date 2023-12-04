@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="https://coinguides.org/wp-content/uploads/2020/10/gold-coin.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripto || Search Page</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3J5cHRvY3VycmVuY3l8ZW58MHx8MHx8fDA%3D");
+            background-size: cover;
+            backdrop-filter: blur(10px);
+            color: wheat;
+            background-repeat: repeat-y;
+            /* height: 100vh;
+            width: 100vw; */
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            overflow-wrap: scroll;
+            border: none
+        }
+
+        main {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .search_container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .input {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .search_container input {
+            height: 60px;
+            width: 70%;
+            padding: 20px;
+            font-weight: bolder;
+            font-size: 2rem;
+            box-shadow: 3px 3px 3px 3px rgba(28, 28, 26, 0.765);
+            border-radius: 10px;
+            border: none;
+            background-color: rgba(41, 59, 59, 0.828);
+            color: rgb(186, 128, 11);
+        }
+
+        .input button {
+            text-align: center;
+            height: 50px;
+            width: 100px;
+            padding: 10px;
+            font-weight: bolder;
+            font-size: larger;
+            box-shadow: 3px 3px 3px 3px rgba(28, 27, 26, 0.765);
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: aliceblue;
+            outline: none !important;
+            cursor: pointer;
+            transition: all 1s ease;
+            position: relative;
+            display: inline-block;
+            color: coral;
+        }
+
+       
+        /* search button  */
+       
+
+        .btn-41 {
+            border: 2px solid rgb(255, 255, 255);
+            z-index: 1;
+            color: white;
+        }
+
+        .btn-41:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            direction: ltl;
+            z-index: -1;
+            background: rgba(123, 110, 110, 0.649);
+            transition: all 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .btn-41:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(186, 128, 11);
+        }
+
+        .btn-41:hover:after {
+            left: auto;
+            right: 0;
+            width: 100%;
+        }
+
+        .btn-41:active {
+            top: 2px;
+        }
+
+        /* crpto container */
+        .cryptoContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            padding: 2rem 0;
+            margin-top: 100px;
+        }
+
+        .cryptoCard {
+            width: 75%;
+            height: 50px;
+            background-color: rgba(168, 153, 106, 0.445);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 3rem;
+        }
+
+        .cryptoCard:hover {
+            box-shadow: 0 0 10px black;
+        }
+
+        .cryptoName {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+
+        .cryptoCard button {
+            background: transparent;
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 2px solid black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cryptoCard button:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .cryptoName img:hover {
+            transform: scale(2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="search_container">
+            <div class="input">
+                <input type="text" placeholder="Enter Crypto Here...">
+                <button class="btn-41">Search</button>
+            </div>
+
+            <div class="cryptoContainer"></div>
+
+        </div>
+
+    </main>
+    <script src="../nav/search.js"> </script>
+</body>
+
+</html>

@@ -33,7 +33,7 @@ CryptoView is a platform designed to provide real-time information about various
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/CryptoView.git
+    git clone https://github.com/VirendrKumarYadav/Cryptogamia.git
     cd CryptoView
     ```
 
